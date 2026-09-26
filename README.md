@@ -9,6 +9,8 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 - [addyosmani/agent-skills #576](https://github.com/addyosmani/agent-skills/pull/576): the eval grader binds each result to its declared expectation and rejects malformed output.
 - [addyosmani/agent-skills #578](https://github.com/addyosmani/agent-skills/pull/578): the simplify-ignore hook no longer discards edits made outside the Edit tool.
 - [addyosmani/agent-skills #587](https://github.com/addyosmani/agent-skills/pull/587): stale grading files are cleared before a rejected run is written; the executor model is recorded per run.
+- [addyosmani/agent-skills #598](https://github.com/addyosmani/agent-skills/pull/598): the ADR eval grades the status and date the skill asks for, rather than timeless wording.
+- [addyosmani/agent-skills #600](https://github.com/addyosmani/agent-skills/pull/600): the constraint skill's floor-guard reference now sees untracked files, deleted tests and loosened maximum budgets.
 
 ## Open, in review
 
@@ -20,7 +22,7 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 - [harbor-framework/harbor #3356](https://github.com/harbor-framework/harbor/pull/3356): pass@k grouped trials by display name, inflating scores for same-name tasks.
 - [EleutherAI/lm-evaluation-harness #4221](https://github.com/EleutherAI/lm-evaluation-harness/pull/4221): bootstrap standard errors for binary F1 and MCC computed from confusion counts, replacing 100,000 sklearn calls.
 - [obra/superpowers #2304](https://github.com/obra/superpowers/pull/2304): task briefs no longer end early at a fenced example that contains a task heading.
-- [addyosmani/agent-skills #598](https://github.com/addyosmani/agent-skills/pull/598) and [#600](https://github.com/addyosmani/agent-skills/pull/600): the ADR eval grades status and date rather than timeless wording, and the constraint skill's floor guard now sees untracked files.
+- [addyosmani/agent-skills #614](https://github.com/addyosmani/agent-skills/pull/614) and [#615](https://github.com/addyosmani/agent-skills/pull/615): follow-ups the maintainer invited on #600 and #598. The floor guard now checks changed lines that start with `++` or `--` and runs correctly from a subfolder, and the ADR template's Status line starts at Proposed.
 
 ## Reported
 

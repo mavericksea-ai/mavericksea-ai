@@ -14,7 +14,8 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 
 ## Open, in review
 
-- [NVIDIA/SkillEvaluator #154](https://github.com/NVIDIA/SkillEvaluator/pull/154): Tier 3 credited reading a script as executing it; credit now requires evidence of an actual invocation. Several review rounds with NVIDIA's code owners.
+- [NVIDIA/SkillEvaluator #154](https://github.com/NVIDIA/SkillEvaluator/pull/154): Tier 3 credited reading a script as executing it; credit now requires evidence of an actual invocation. Approved after several review rounds with NVIDIA's code owners.
+- [mlflow/mlflow #26252](https://github.com/mlflow/mlflow/pull/26252): min_relative_change accepted worse models and rejected better ones when the baseline metric was negative; the check now uses the baseline's magnitude. Approved by a maintainer.
 - [stanfordnlp/dspy #10474](https://github.com/stanfordnlp/dspy/pull/10474): BootstrapFewShot saved demonstrations that DSPy's own judge metrics had rejected.
 - [langchain-ai/langsmith-sdk #3583](https://github.com/langchain-ai/langsmith-sdk/pull/3583): evaluate_comparative with randomize_order recorded scores against the wrong runs.
 - [confident-ai/deepeval #3330](https://github.com/confident-ai/deepeval/pull/3330): PromptAlignmentMetric scored missing judge verdicts as a perfect pass. Another contributor has since proposed the same check for eleven metrics ([#3347](https://github.com/confident-ai/deepeval/pull/3347)).
@@ -26,7 +27,7 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 
 ## Reported
 
-- [mlflow/mlflow #26144](https://github.com/mlflow/mlflow/issues/26144): min_relative_change accepts worse models and rejects better ones when the baseline metric is negative. A fix is ready once the issue is triaged.
+- [NousResearch/hermes-agent #125369](https://github.com/NousResearch/hermes-agent/issues/125369): goal quality gates run in the backend's directory instead of the session workspace, so a failing project can be marked done.
 - [NVIDIA/SkillEvaluator #149](https://github.com/NVIDIA/SkillEvaluator/issues/149): unrecovered command failures scored as first-attempt clean. A fix by another contributor is open as [#151](https://github.com/NVIDIA/SkillEvaluator/pull/151).
 
 Open to research, tooling and evaluation-infrastructure conversations: hello@driftproofhq.com

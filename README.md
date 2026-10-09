@@ -6,6 +6,7 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 
 ## Merged contributions
 
+- [alibaba/skill-up #304](https://github.com/alibaba/skill-up/pull/304): tool-argument rules compared values as formatted text, so differently structured argument arrays matched each other and a wrong tool call could pass CI; rules now compare the actual argument structure. Issue [#303](https://github.com/alibaba/skill-up/issues/303).
 - [mlflow/mlflow #26252](https://github.com/mlflow/mlflow/pull/26252): `MetricThreshold(min_relative_change=...)` divided by the signed baseline, so with a negative baseline metric it accepted worse models and rejected better ones. The change is now measured against the baseline's magnitude. Issue [#26144](https://github.com/mlflow/mlflow/issues/26144).
 - [NVIDIA/SkillEvaluator #154](https://github.com/NVIDIA/SkillEvaluator/pull/154): Tier 3 credited reading a script as executing it; credit now requires evidence of an actual invocation. Four review rounds with NVIDIA's code owners.
 - [addyosmani/agent-skills #576](https://github.com/addyosmani/agent-skills/pull/576): the eval grader binds each result to its declared expectation and rejects malformed output.
@@ -17,6 +18,8 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 
 ## Open, in review
 
+- [modelscope/evalscope #1828](https://github.com/modelscope/evalscope/pull/1828): PubMedQA dropped unrecognized answers from its confusion matrix, inflating macro recall and F1 enough to reverse model rankings in the reproduction. Issue [#1827](https://github.com/modelscope/evalscope/issues/1827).
+- [NVIDIA/SkillEvaluator #190](https://github.com/NVIDIA/SkillEvaluator/pull/190): Tier 3 accuracy judges accepted a model-supplied total even when their own five criterion verdicts implied a different score; the score is now derived from the verdicts. Issue [#189](https://github.com/NVIDIA/SkillEvaluator/issues/189).
 - [stanfordnlp/dspy #10474](https://github.com/stanfordnlp/dspy/pull/10474): BootstrapFewShot saved demonstrations that DSPy's own judge metrics had rejected.
 - [langchain-ai/langsmith-sdk #3583](https://github.com/langchain-ai/langsmith-sdk/pull/3583): evaluate_comparative with randomize_order recorded scores against the wrong runs.
 - [confident-ai/deepeval #3330](https://github.com/confident-ai/deepeval/pull/3330): PromptAlignmentMetric scored missing judge verdicts as a perfect pass. Another contributor has since proposed the same check for eleven metrics ([#3347](https://github.com/confident-ai/deepeval/pull/3347)).
@@ -28,6 +31,7 @@ Most of the fixes below share one theme: an evaluation that reports a result it 
 
 ## Reported
 
+- [mlflow/mlflow #26560](https://github.com/mlflow/mlflow/issues/26560): NaN metric values pass `min_relative_change` validation, because the failure predicate evaluates False on NaN; reproduced by MLflow's triage. Fix and regression tests held for the PR.
 - [NVIDIA/SkillEvaluator #149](https://github.com/NVIDIA/SkillEvaluator/issues/149): unrecovered command failures scored as first-attempt clean. A fix by another contributor is open as [#151](https://github.com/NVIDIA/SkillEvaluator/pull/151).
 
 Open to research, tooling and evaluation-infrastructure conversations: hello@driftproofhq.com

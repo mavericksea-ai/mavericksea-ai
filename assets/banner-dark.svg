@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="480" viewBox="0 0 1440 480" role="img" aria-labelledby="title desc">
+<title id="title">Maverick — Make the score mean something.</title><desc id="desc">Building Driftproof. Open-source tools for AI evaluation reliability.</desc>
+<style>
+.trace { stroke-dasharray: 240; stroke-dashoffset: 240; animation: reveal 5s ease-in-out infinite; }
+@keyframes reveal { 0%,10% {stroke-dashoffset:240;opacity:.2} 55%,85% {stroke-dashoffset:0;opacity:1} 100%{stroke-dashoffset:0;opacity:.2} }
+@media (prefers-reduced-motion: reduce) {.trace{animation:none;stroke-dashoffset:0}}
+</style><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a49e91" opacity=".3"/></pattern></defs>
+<rect width="1440" height="480" rx="8" fill="#111b23"/>
+<path d="M0 8a8 8 0 0 1 8-8h8v480H8a8 8 0 0 1-8-8Z" fill="#eb5b35"/>
+<text x="64" y="66" fill="#edf1e8" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="4">MAVERICK</text>
+<text x="1370" y="66" text-anchor="end" fill="#9babae" font-family="monospace" font-size="15">AI EVALUATION / OPEN SOURCE</text>
+<path d="M64 94H1376" stroke="#30404a"/>
+<text x="60" y="210" fill="#edf1e8" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="700" letter-spacing="-4">Make the score</text>
+<text x="60" y="306" fill="#edf1e8" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="700" letter-spacing="-4">mean something<tspan fill="#eb5b35">.</tspan></text>
+<text x="64" y="382" fill="#b4c3c3" font-family="Arial,Helvetica,sans-serif" font-size="23">Building Driftproof. Fixing how AI gets evaluated.</text>
+<rect x="989" y="119" width="387" height="283" fill="url(#dots)"/>
+<g transform="translate(1041 129) rotate(5 143 122)"><rect x="7" y="10" width="260" height="247" rx="6" fill="#0a1218"/><rect width="260" height="247" rx="6" fill="#192931" stroke="#3a525a"/>
+<text x="24" y="37" fill="#a8bfbd" font-family="monospace" font-size="12" letter-spacing="2">FOLLOW THE EVIDENCE</text>
+<path d="M24 53H236" stroke="#354b51"/>
+<g stroke="#adb5a8" fill="none" stroke-width="2"><path d="M30 95h190M30 134h190M30 173h190" stroke-dasharray="3 5"/><path d="M70 86v18m0-9h83m0-9v18M100 125v18m0-9h83m0-9v18M53 164v18m0-9h76m0-9v18" stroke="#8dd8bd" stroke-width="3"/></g>
+<g fill="#8dd8bd"><circle cx="112" cy="95" r="6"/><circle cx="141" cy="134" r="6"/><circle cx="91" cy="173" r="6"/></g>
+<path d="M24 201h212" stroke="#354b51"/><text x="24" y="226" font-family="monospace" font-size="12" fill="#a8bfbd">TASK → ANSWER → RECEIPT</text></g>
+<path class="trace" d="M1041 422h55l15-12 18 23 19-34 18 23h170" stroke="#eb5b35" stroke-width="3" fill="none"/><path d="M64 423H960" stroke="#30404a"/>
+<text x="64" y="453" fill="#9babae" font-family="monospace" font-size="13" letter-spacing="1">REPRODUCIBLE RUNS. INSPECTABLE RESULTS.</text><circle cx="1366" cy="448" r="6" fill="#eb5b35"/>
+</svg>

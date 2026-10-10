@@ -1,37 +1,82 @@
-# Maverick
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
+  <img src="assets/banner.svg" width="100%" alt="Maverick — Make the score mean something. Building Driftproof. Fixing how AI gets evaluated." />
+</picture>
 
-I build [Driftproof](https://driftproofhq.com), an open-source instrument that measures whether an AI skill's with-versus-without gap is real or noise, and whether it held after the last model release, and records the result as a dated, hash-verified receipt. The method is written up in [a preprint on Zenodo](https://doi.org/10.5281/zenodo.23050796).
+<p>
+<a href="https://github.com/driftproofhq/driftproof"><b>↗ Driftproof</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://driftproofhq.com/writing/three-releases/">Writing</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://github.com/pulls?q=is%3Apr+author%3Amavericksea-ai+is%3Apublic+-org%3Adriftproofhq+-user%3Amavericksea-ai">Contributions</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="mailto:hello@driftproofhq.com">Get in touch</a>
+</p>
 
-Most of the fixes below share one theme: an evaluation that reports a result it did not actually measure.
+I’m **Maverick**, building [Driftproof](https://driftproofhq.com) and contributing to the tools that evaluate AI models and agents.
 
-## Merged contributions
+I work on a deceptively simple question: **did the system actually measure what its score says it measured?** That has led me from missing execution evidence to inflated metrics, stale grading, and results attributed to the wrong model.
 
-- [alibaba/skill-up #304](https://github.com/alibaba/skill-up/pull/304): tool-argument rules compared values as formatted text, so differently structured argument arrays matched each other and a wrong tool call could pass CI; rules now compare the actual argument structure. Issue [#303](https://github.com/alibaba/skill-up/issues/303).
-- [mlflow/mlflow #26252](https://github.com/mlflow/mlflow/pull/26252): `MetricThreshold(min_relative_change=...)` divided by the signed baseline, so with a negative baseline metric it accepted worse models and rejected better ones. The change is now measured against the baseline's magnitude. Issue [#26144](https://github.com/mlflow/mlflow/issues/26144).
-- [NVIDIA/SkillEvaluator #154](https://github.com/NVIDIA/SkillEvaluator/pull/154): Tier 3 credited reading a script as executing it; credit now requires evidence of an actual invocation. Four review rounds with NVIDIA's code owners.
-- [addyosmani/agent-skills #576](https://github.com/addyosmani/agent-skills/pull/576): the eval grader binds each result to its declared expectation and rejects malformed output.
-- [addyosmani/agent-skills #578](https://github.com/addyosmani/agent-skills/pull/578): the simplify-ignore hook no longer discards edits made outside the Edit tool.
-- [addyosmani/agent-skills #587](https://github.com/addyosmani/agent-skills/pull/587): stale grading files are cleared before a rejected run is written; the executor model is recorded per run.
-- [addyosmani/agent-skills #598](https://github.com/addyosmani/agent-skills/pull/598): the ADR eval grades the status and date the skill asks for, rather than timeless wording.
-- [addyosmani/agent-skills #600](https://github.com/addyosmani/agent-skills/pull/600): the constraint skill's floor-guard reference now sees untracked files, deleted tests and loosened maximum budgets.
-- [addyosmani/agent-skills #614](https://github.com/addyosmani/agent-skills/pull/614) and [#615](https://github.com/addyosmani/agent-skills/pull/615): follow-ups the maintainer invited on #600 and #598. The floor guard now checks changed lines that start with `++` or `--` and runs correctly from a subfolder, and the ADR template's Status line starts at Proposed.
+## 01 / Building Driftproof
 
-## Open, in review
+**Agent skills change. Models change. Their evaluations should keep up.**
 
-- [modelscope/evalscope #1828](https://github.com/modelscope/evalscope/pull/1828): PubMedQA dropped unrecognized answers from its confusion matrix, inflating macro recall and F1 enough to reverse model rankings in the reproduction. Issue [#1827](https://github.com/modelscope/evalscope/issues/1827).
-- [NVIDIA/SkillEvaluator #190](https://github.com/NVIDIA/SkillEvaluator/pull/190): Tier 3 accuracy judges accepted a model-supplied total even when their own five criterion verdicts implied a different score; the score is now derived from the verdicts. Issue [#189](https://github.com/NVIDIA/SkillEvaluator/issues/189).
-- [stanfordnlp/dspy #10474](https://github.com/stanfordnlp/dspy/pull/10474): BootstrapFewShot saved demonstrations that DSPy's own judge metrics had rejected.
-- [langchain-ai/langsmith-sdk #3583](https://github.com/langchain-ai/langsmith-sdk/pull/3583): evaluate_comparative with randomize_order recorded scores against the wrong runs.
-- [confident-ai/deepeval #3330](https://github.com/confident-ai/deepeval/pull/3330): PromptAlignmentMetric scored missing judge verdicts as a perfect pass. Another contributor has since proposed the same check for eleven metrics ([#3347](https://github.com/confident-ai/deepeval/pull/3347)).
-- [confident-ai/deepeval #3355](https://github.com/confident-ai/deepeval/pull/3355) and [#3357](https://github.com/confident-ai/deepeval/pull/3357): the prompt optimizer kept one score per metric class, and concurrent evaluations shared span metric objects.
-- [harbor-framework/harbor #3356](https://github.com/harbor-framework/harbor/pull/3356): pass@k grouped trials by display name, inflating scores for same-name tasks.
-- [EleutherAI/lm-evaluation-harness #4221](https://github.com/EleutherAI/lm-evaluation-harness/pull/4221): bootstrap standard errors for binary F1 and MCC computed from confusion counts, replacing 100,000 sklearn calls.
-- [obra/superpowers #2304](https://github.com/obra/superpowers/pull/2304): task briefs no longer end early at a fenced example that contains a task heading.
-- [anthropics/skills #1945](https://github.com/anthropics/skills/pull/1945): the claude-api eval guides sized the noise floor as if repeated runs were extra test cases; the interval narrows with cases, not reps, and the guides now give the paired-interval arithmetic. Issue [#1944](https://github.com/anthropics/skills/issues/1944).
+Driftproof runs tasks with and without a skill, samples answers and judge scores, and writes dated, hash-verified receipts. It gives you results to inspect and compare when the model underneath a skill changes.
 
-## Reported
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>Use the instrument</h3>
+<p>Evaluate a skill against a baseline and inspect the evidence behind the result.</p>
+<a href="https://github.com/driftproofhq/driftproof"><b>Explore the source →</b></a>
+</td>
+<td width="50%" valign="top">
+<h3>Read the findings</h3>
+<p>Published runs, measurement limits, and what changed when the instrument was corrected.</p>
+<a href="https://driftproofhq.com/writing/three-releases/"><b>Three model releases later →</b></a>
+</td>
+</tr>
+</table>
 
-- [mlflow/mlflow #26560](https://github.com/mlflow/mlflow/issues/26560): NaN metric values pass `min_relative_change` validation, because the failure predicate evaluates False on NaN; reproduced by MLflow's triage. Fix and regression tests held for the PR.
-- [NVIDIA/SkillEvaluator #149](https://github.com/NVIDIA/SkillEvaluator/issues/149): unrecovered command failures scored as first-attempt clean. A fix by another contributor is open as [#151](https://github.com/NVIDIA/SkillEvaluator/pull/151).
+## 02 / Fixes that shipped
 
-Open to research, tooling and evaluation-infrastructure conversations: hello@driftproofhq.com
+Selected merged contributions to projects I use and study.
+
+| Where | Why the fix matters |
+| :--- | :--- |
+| **NVIDIA · SkillEvaluator** | Reading a script must not count as running it. [Require invocation evidence ↗](https://github.com/NVIDIA/SkillEvaluator/pull/154) |
+| **ModelScope · EvalScope** | Unrecognized answers must not disappear from recall and F1 denominators. [Correct PubMedQA scoring ↗](https://github.com/modelscope/evalscope/pull/1828) |
+| **MLflow** | Relative score checks must handle negative baselines correctly. [Use the baseline’s magnitude ↗](https://github.com/mlflow/mlflow/pull/26252) |
+| **Alibaba · skill-up** | Tool argument rules need the argument structure preserved. [Fix judge matching ↗](https://github.com/alibaba/skill-up/pull/304) |
+| **Addy Osmani · agent-skills** | Grades must match declared expectations and the current run. [Bind expectation IDs ↗](https://github.com/addyosmani/agent-skills/pull/576) · [Clear stale grading ↗](https://github.com/addyosmani/agent-skills/pull/587) |
+
+<details>
+<summary>More merged work in agent-skills</summary>
+
+- [#578](https://github.com/addyosmani/agent-skills/pull/578) — Preserve on-disk edits when expanding simplify-ignore sections.
+- [#598](https://github.com/addyosmani/agent-skills/pull/598), [#615](https://github.com/addyosmani/agent-skills/pull/615) — Align ADR grading and templates with the expected status and date.
+- [#600](https://github.com/addyosmani/agent-skills/pull/600), [#614](https://github.com/addyosmani/agent-skills/pull/614) — Strengthen floor-guard checks for untracked files, deletions, thresholds, and diff parsing.
+
+</details>
+
+## 03 / Open-source activity
+
+<!-- activity:start -->
+<table>
+<tr><td width="50%" valign="top"><h3>↗ Recently active · merged</h3>
+<p><a href="https://github.com/modelscope/evalscope/pull/1828"><b>modelscope/evalscope #1828</b></a><br/><sub>fix(pubmedqa): include unrecognized answers in recall and F1 denominators</sub></p>
+<p><a href="https://github.com/alibaba/skill-up/pull/304"><b>alibaba/skill-up #304</b></a><br/><sub>fix(judge): preserve tool argument structure when matching</sub></p>
+<p><a href="https://github.com/mlflow/mlflow/pull/26252"><b>mlflow/mlflow #26252</b></a><br/><sub>Use the baseline&#x27;s magnitude in min_relative_change checks</sub></p>
+</td><td width="50%" valign="top"><h3>◌ Under review</h3>
+<p><a href="https://github.com/addyosmani/agent-skills/pull/667"><b>addyosmani/agent-skills #667</b></a><br/><sub>feat(evals): record behavioral runs for historical regrading</sub></p>
+<p><a href="https://github.com/stanfordnlp/dspy/pull/10474"><b>stanfordnlp/dspy #10474</b></a><br/><sub>fix: read Prediction scores in BootstrapFewShot&#x27;s no-threshold acceptance check</sub></p>
+<p><a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4221"><b>EleutherAI/lm-evaluation-harness #4221</b></a><br/><sub>perf(metrics): bootstrap binary f1 and mcc stderr from confusion counts</sub></p>
+</td></tr>
+</table>
+<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-10 UTC.</sub>
+<!-- activity:end -->
+
+---
+
+**Working on agent skills or evaluation infrastructure?** I’m interested in reproducible failures, useful tools, and getting the measurement right.
+
+[hello@driftproofhq.com](mailto:hello@driftproofhq.com) · [driftproofhq.com](https://driftproofhq.com)
+
+<sub>Contribution statuses checked October 10, 2026.</sub>

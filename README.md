@@ -65,12 +65,12 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/alibaba/skill-up/pull/304"><b>alibaba/skill-up #304</b></a><br/><sub>fix(judge): preserve tool argument structure when matching</sub></p>
 <p><a href="https://github.com/mlflow/mlflow/pull/26252"><b>mlflow/mlflow #26252</b></a><br/><sub>Use the baseline&#x27;s magnitude in min_relative_change checks</sub></p>
 </td><td width="50%" valign="top"><h3>◌ Under review</h3>
+<p><a href="https://github.com/obra/superpowers/pull/2304"><b>obra/superpowers #2304</b></a><br/><sub>task-brief: track fence character and length so fenced examples cannot end a task early</sub></p>
 <p><a href="https://github.com/BerriAI/litellm/pull/45834"><b>BerriAI/litellm #45834</b></a><br/><sub>fix(batches): account for Anthropic cache TTL and search fees</sub></p>
 <p><a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4221"><b>EleutherAI/lm-evaluation-harness #4221</b></a><br/><sub>perf(metrics): bootstrap binary f1 and mcc stderr from confusion counts</sub></p>
-<p><a href="https://github.com/addyosmani/agent-skills/pull/667"><b>addyosmani/agent-skills #667</b></a><br/><sub>feat(evals): record behavioral runs for historical regrading</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-11 UTC.</sub>
+<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-12 UTC.</sub>
 <!-- activity:end -->
 
 ---

@@ -70,7 +70,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/4221"><b>EleutherAI/lm-evaluation-harness #4221</b></a><br/><sub>perf(metrics): bootstrap binary f1 and mcc stderr from confusion counts</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-12 UTC.</sub>
+<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-13 UTC.</sub>
 <!-- activity:end -->
 
 ---

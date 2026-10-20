@@ -65,12 +65,12 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/modelscope/evalscope/pull/1828"><b>modelscope/evalscope #1828</b></a><br/><sub>fix(pubmedqa): include unrecognized answers in recall and F1 denominators</sub></p>
 <p><a href="https://github.com/alibaba/skill-up/pull/304"><b>alibaba/skill-up #304</b></a><br/><sub>fix(judge): preserve tool argument structure when matching</sub></p>
 </td><td width="50%" valign="top"><h3>◌ Under review</h3>
+<p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/217"><b>NVIDIA/SkillEvaluator #217</b></a><br/><sub>fix(tier3): score unrecovered failures and align recovery verdicts</sub></p>
 <p><a href="https://github.com/addyosmani/agent-skills/pull/694"><b>addyosmani/agent-skills #694</b></a><br/><sub>fix(constraints): enforce security and accessibility quality gates</sub></p>
 <p><a href="https://github.com/BerriAI/litellm/pull/45834"><b>BerriAI/litellm #45834</b></a><br/><sub>fix(batches): account for Anthropic cache TTL and search fees</sub></p>
-<p><a href="https://github.com/stanfordnlp/dspy/pull/10474"><b>stanfordnlp/dspy #10474</b></a><br/><sub>fix: read Prediction scores in BootstrapFewShot&#x27;s no-threshold acceptance check</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-19 UTC.</sub>
+<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-20 UTC.</sub>
 <!-- activity:end -->
 
 ---

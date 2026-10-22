@@ -70,7 +70,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/BerriAI/litellm/pull/45834"><b>BerriAI/litellm #45834</b></a><br/><sub>fix(batches): account for Anthropic cache TTL and search fees</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-21 UTC.</sub>
+<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-22 UTC.</sub>
 <!-- activity:end -->
 
 ---

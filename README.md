@@ -70,7 +70,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/stanfordnlp/dspy/pull/10474"><b>stanfordnlp/dspy #10474</b></a><br/><sub>fix: read Prediction scores in BootstrapFewShot&#x27;s no-threshold acceptance check</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-23 UTC.</sub>
+<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-24 UTC.</sub>
 <!-- activity:end -->
 
 ---

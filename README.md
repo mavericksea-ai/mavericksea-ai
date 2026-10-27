@@ -65,12 +65,17 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/190"><b>NVIDIA/SkillEvaluator #190</b></a><br/><sub>fix(tier3): derive accuracy scores from criterion verdicts</sub></p>
 <p><a href="https://github.com/modelscope/evalscope/pull/1828"><b>modelscope/evalscope #1828</b></a><br/><sub>fix(pubmedqa): include unrecognized answers in recall and F1 denominators</sub></p>
 </td><td width="50%" valign="top"><h3>◌ Under review</h3>
-<p><a href="https://github.com/addyosmani/agent-skills/pull/694"><b>addyosmani/agent-skills #694</b></a><br/><sub>fix(constraints): enforce security and accessibility quality gates</sub></p>
-<p><a href="https://github.com/BerriAI/litellm/pull/45834"><b>BerriAI/litellm #45834</b></a><br/><sub>fix(batches): account for Anthropic cache TTL and search fees</sub></p>
-<p><a href="https://github.com/stanfordnlp/dspy/pull/10474"><b>stanfordnlp/dspy #10474</b></a><br/><sub>fix: read Prediction scores in BootstrapFewShot&#x27;s no-threshold acceptance check</sub></p>
+<p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/242"><b>NVIDIA/SkillEvaluator #242</b></a><br/><sub>Add opt-in Unicode character facts for Tier 3 judges</sub></p>
+<p><a href="https://github.com/langchain-ai/openevals/pull/293"><b>langchain-ai/openevals #293</b></a><br/><sub>Add optional character facts for Unicode-sensitive judging</sub></p>
+<p><a href="https://github.com/promptfoo/promptfoo/pull/12005"><b>promptfoo/promptfoo #12005</b></a><br/><sub>feat(eval): add character facts template filter</sub></p>
+</td></tr>
+<tr><td colspan="2" valign="top"><h3>Reported issues</h3>
+<p><a href="https://github.com/anthropics/claude-code/issues/105497"><b>anthropics/claude-code #105497</b></a><br/><sub>[BUG] Native plugin eval LLM grader misgrades literal NBSP; equivalent escaped Python literals grade correctly</sub></p>
+<p><a href="https://github.com/langchain-ai/openevals/issues/292"><b>langchain-ai/openevals #292</b></a><br/><sub>Code-correctness judge can reverse grades on NBSP-sensitive answers</sub></p>
+<p><a href="https://github.com/promptfoo/promptfoo/issues/12004"><b>promptfoo/promptfoo #12004</b></a><br/><sub>llm-rubric can misgrade NBSP-sensitive answers</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs · ordered by latest activity · refreshed 2026-10-27 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-10-27 UTC.</sub>
 <!-- activity:end -->
 
 ---

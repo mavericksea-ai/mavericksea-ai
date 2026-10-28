@@ -75,7 +75,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/promptfoo/promptfoo/issues/12004"><b>promptfoo/promptfoo #12004</b></a><br/><sub>llm-rubric can misgrade NBSP-sensitive answers</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-10-27 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-10-28 UTC.</sub>
 <!-- activity:end -->
 
 ---

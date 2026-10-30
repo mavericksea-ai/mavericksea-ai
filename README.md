@@ -61,13 +61,13 @@ Selected merged contributions to projects I use and study.
 <!-- activity:start -->
 <table>
 <tr><td width="50%" valign="top"><h3>↗ Recently active · merged</h3>
+<p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/242"><b>NVIDIA/SkillEvaluator #242</b></a><br/><sub>Add opt-in Unicode character facts for Tier 3 judges</sub></p>
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/217"><b>NVIDIA/SkillEvaluator #217</b></a><br/><sub>fix(tier3): score unrecovered failures and align recovery verdicts</sub></p>
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/190"><b>NVIDIA/SkillEvaluator #190</b></a><br/><sub>fix(tier3): derive accuracy scores from criterion verdicts</sub></p>
-<p><a href="https://github.com/modelscope/evalscope/pull/1828"><b>modelscope/evalscope #1828</b></a><br/><sub>fix(pubmedqa): include unrecognized answers in recall and F1 denominators</sub></p>
 </td><td width="50%" valign="top"><h3>◌ Under review</h3>
 <p><a href="https://github.com/addyosmani/agent-skills/pull/694"><b>addyosmani/agent-skills #694</b></a><br/><sub>fix(constraints): enforce security and accessibility quality gates</sub></p>
-<p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/242"><b>NVIDIA/SkillEvaluator #242</b></a><br/><sub>Add opt-in Unicode character facts for Tier 3 judges</sub></p>
 <p><a href="https://github.com/langchain-ai/openevals/pull/293"><b>langchain-ai/openevals #293</b></a><br/><sub>Add optional character facts for Unicode-sensitive judging</sub></p>
+<p><a href="https://github.com/promptfoo/promptfoo/pull/12005"><b>promptfoo/promptfoo #12005</b></a><br/><sub>feat(eval): add character facts template filter</sub></p>
 </td></tr>
 <tr><td colspan="2" valign="top"><h3>Reported issues</h3>
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/221"><b>NVIDIA/SkillEvaluator #221</b></a><br/><sub>[BUG]: macOS cancellation cleanup test races with process exit</sub></p>
@@ -75,7 +75,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/langchain-ai/openevals/issues/292"><b>langchain-ai/openevals #292</b></a><br/><sub>Code-correctness judge can reverse grades on NBSP-sensitive answers</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-10-29 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-10-30 UTC.</sub>
 <!-- activity:end -->
 
 ---

@@ -75,7 +75,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/anthropics/claude-code/issues/105497"><b>anthropics/claude-code #105497</b></a><br/><sub>[BUG] Native plugin eval LLM grader misgrades literal NBSP; equivalent escaped Python literals grade correctly</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-05 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-06 UTC.</sub>
 <!-- activity:end -->
 
 ---

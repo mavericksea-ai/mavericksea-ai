@@ -70,12 +70,12 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/BerriAI/litellm/pull/45834"><b>BerriAI/litellm #45834</b></a><br/><sub>fix(batches): account for Anthropic cache TTL and search fees</sub></p>
 </td></tr>
 <tr><td colspan="2" valign="top"><h3>Reported issues</h3>
+<p><a href="https://github.com/BerriAI/litellm/issues/45830"><b>BerriAI/litellm #45830</b></a><br/><sub>[Bug]: Anthropic batch accounting undercounts 1h cache writes and omits web-search fees</sub></p>
 <p><a href="https://github.com/addyosmani/agent-skills/issues/693"><b>addyosmani/agent-skills #693</b></a><br/><sub>[skill-gap]: Quality-gate examples can pass CI with blocking Semgrep or axe findings</sub></p>
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/221"><b>NVIDIA/SkillEvaluator #221</b></a><br/><sub>[BUG]: macOS cancellation cleanup test races with process exit</sub></p>
-<p><a href="https://github.com/anthropics/claude-code/issues/105497"><b>anthropics/claude-code #105497</b></a><br/><sub>[BUG] Native plugin eval LLM grader misgrades literal NBSP; equivalent escaped Python literals grade correctly</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-08 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-09 UTC.</sub>
 <!-- activity:end -->
 
 ---

@@ -75,7 +75,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/221"><b>NVIDIA/SkillEvaluator #221</b></a><br/><sub>[BUG]: macOS cancellation cleanup test races with process exit</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-09 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-10 UTC.</sub>
 <!-- activity:end -->
 
 ---

@@ -65,9 +65,9 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/242"><b>NVIDIA/SkillEvaluator #242</b></a><br/><sub>Add opt-in Unicode character facts for Tier 3 judges</sub></p>
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/pull/217"><b>NVIDIA/SkillEvaluator #217</b></a><br/><sub>fix(tier3): score unrecovered failures and align recovery verdicts</sub></p>
 </td><td width="50%" valign="top"><h3>◌ Under review</h3>
+<p><a href="https://github.com/addyosmani/agent-skills/pull/667"><b>addyosmani/agent-skills #667</b></a><br/><sub>feat(evals): record behavioral runs for historical regrading</sub></p>
 <p><a href="https://github.com/langchain-ai/openevals/pull/293"><b>langchain-ai/openevals #293</b></a><br/><sub>Add optional character facts for Unicode-sensitive judging</sub></p>
 <p><a href="https://github.com/promptfoo/promptfoo/pull/12005"><b>promptfoo/promptfoo #12005</b></a><br/><sub>feat(eval): add character facts template filter</sub></p>
-<p><a href="https://github.com/BerriAI/litellm/pull/45834"><b>BerriAI/litellm #45834</b></a><br/><sub>fix(batches): account for Anthropic cache TTL and search fees</sub></p>
 </td></tr>
 <tr><td colspan="2" valign="top"><h3>Reported issues</h3>
 <p><a href="https://github.com/BerriAI/litellm/issues/45830"><b>BerriAI/litellm #45830</b></a><br/><sub>[Bug]: Anthropic batch accounting undercounts 1h cache writes and omits web-search fees</sub></p>
@@ -75,7 +75,7 @@ Selected merged contributions to projects I use and study.
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/221"><b>NVIDIA/SkillEvaluator #221</b></a><br/><sub>[BUG]: macOS cancellation cleanup test races with process exit</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-10 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-11 UTC.</sub>
 <!-- activity:end -->
 
 ---

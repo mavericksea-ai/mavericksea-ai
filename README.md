@@ -1,11 +1,13 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
-  <img src="assets/banner.svg" width="100%" alt="Maverick — Make the score mean something. Building Driftproof. Fixing how AI gets evaluated." />
+  <img src="assets/banner.svg" width="100%" alt="Maverick: make the score mean something. Building Driftproof. Fixing how AI gets evaluated." />
 </picture>
 
 <p>
 <a href="https://github.com/driftproofhq/driftproof"><b>↗ Driftproof</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://zenodo.org/records/24136677">Paper</a> &nbsp;&nbsp;·&nbsp;&nbsp;
 <a href="https://driftproofhq.com/writing/three-releases/">Writing</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://driftproofhq.com/measure/">Free skill check</a> &nbsp;&nbsp;·&nbsp;&nbsp;
 <a href="https://github.com/pulls?q=is%3Apr+author%3Amavericksea-ai+is%3Apublic+-org%3Adriftproofhq+-user%3Amavericksea-ai">Contributions</a> &nbsp;&nbsp;·&nbsp;&nbsp;
 <a href="mailto:hello@driftproofhq.com">Get in touch</a>
 </p>
@@ -18,7 +20,7 @@ I work on a deceptively simple question: **did the system actually measure what 
 
 **Agent skills change. Models change. Their evaluations should keep up.**
 
-Driftproof runs tasks with and without a skill, samples answers and judge scores, and writes dated, hash-verified receipts. It gives you results to inspect and compare when the model underneath a skill changes.
+Driftproof runs the same tasks with a skill, without it, and with a same-length placebo, samples answers and judge scores, and writes dated, hash-verified receipts. It gives you results to inspect and compare when the model underneath a skill changes.
 
 <table>
 <tr>
@@ -29,30 +31,34 @@ Driftproof runs tasks with and without a skill, samples answers and judge scores
 </td>
 <td width="50%" valign="top">
 <h3>Read the findings</h3>
-<p>Published runs, measurement limits, and what changed when the instrument was corrected.</p>
-<a href="https://driftproofhq.com/writing/three-releases/"><b>Three model releases later →</b></a>
+<p>Latest report, on Fable 5.2: 10 of 20 skills beat a same-length placebo, 4 did not, and 6 could not be told apart.</p>
+<a href="https://driftproofhq.com/reports/019/"><b>Report 019 →</b></a> &nbsp;·&nbsp; <a href="https://driftproofhq.com/writing/three-releases/">Three model releases later</a>
 </td>
 </tr>
 </table>
 
+**Not sure a skill of yours still helps?** Send it and I will measure it for free on Haiku 5.5 and Sonnet 5.5, against no skill and against a placebo, and publish the result whatever it says. Text-only skills, first 50 requests. [Request a measurement →](https://driftproofhq.com/measure/)
+
 ## 02 / Fixes that shipped
 
-Selected merged contributions to projects I use and study.
+Selected from 15 merged pull requests in 5 projects I use and study. The pattern behind them is written up in [Reported, Not Measured](https://zenodo.org/records/24136677) (version 2, November 2026): 26 defects in 15 evaluation tools, each one reproduced, 13 fixed upstream so far.
 
 | Where | Why the fix matters |
 | :--- | :--- |
-| **NVIDIA · SkillEvaluator** | Reading a script must not count as running it. [Require invocation evidence ↗](https://github.com/NVIDIA/SkillEvaluator/pull/154) |
+| **NVIDIA · SkillEvaluator** | Credit must follow evidence: reading a script is not running it, a failed command is not a clean first attempt, and a total must follow from its own verdicts. [Require invocation evidence ↗](https://github.com/NVIDIA/SkillEvaluator/pull/154) · [Score unrecovered failures ↗](https://github.com/NVIDIA/SkillEvaluator/pull/217) · [Derive totals from verdicts ↗](https://github.com/NVIDIA/SkillEvaluator/pull/190) |
 | **ModelScope · EvalScope** | Unrecognized answers must not disappear from recall and F1 denominators. [Correct PubMedQA scoring ↗](https://github.com/modelscope/evalscope/pull/1828) |
 | **MLflow** | Relative score checks must handle negative baselines correctly. [Use the baseline’s magnitude ↗](https://github.com/mlflow/mlflow/pull/26252) |
 | **Alibaba · skill-up** | Tool argument rules need the argument structure preserved. [Fix judge matching ↗](https://github.com/alibaba/skill-up/pull/304) |
 | **Addy Osmani · agent-skills** | Grades must match declared expectations and the current run. [Bind expectation IDs ↗](https://github.com/addyosmani/agent-skills/pull/576) · [Clear stale grading ↗](https://github.com/addyosmani/agent-skills/pull/587) |
 
 <details>
-<summary>More merged work in agent-skills</summary>
+<summary>More merged work</summary>
 
-- [#578](https://github.com/addyosmani/agent-skills/pull/578) — Preserve on-disk edits when expanding simplify-ignore sections.
-- [#598](https://github.com/addyosmani/agent-skills/pull/598), [#615](https://github.com/addyosmani/agent-skills/pull/615) — Align ADR grading and templates with the expected status and date.
-- [#600](https://github.com/addyosmani/agent-skills/pull/600), [#614](https://github.com/addyosmani/agent-skills/pull/614) — Strengthen floor-guard checks for untracked files, deletions, thresholds, and diff parsing.
+- agent-skills [#578](https://github.com/addyosmani/agent-skills/pull/578): Preserve on-disk edits when expanding simplify-ignore sections.
+- agent-skills [#598](https://github.com/addyosmani/agent-skills/pull/598), [#615](https://github.com/addyosmani/agent-skills/pull/615): Align ADR grading and templates with the expected status and date.
+- agent-skills [#600](https://github.com/addyosmani/agent-skills/pull/600), [#614](https://github.com/addyosmani/agent-skills/pull/614): Strengthen floor-guard checks for untracked files, deletions, thresholds, and diff parsing.
+- agent-skills [#694](https://github.com/addyosmani/agent-skills/pull/694): Make the security and accessibility gate examples fail the build on blocking findings.
+- SkillEvaluator [#242](https://github.com/NVIDIA/SkillEvaluator/pull/242): Add opt-in character facts so a judge can tell a non-breaking space from a plain space.
 
 </details>
 
@@ -84,4 +90,4 @@ Selected merged contributions to projects I use and study.
 
 [hello@driftproofhq.com](mailto:hello@driftproofhq.com) · [driftproofhq.com](https://driftproofhq.com)
 
-<sub>Contribution statuses checked October 10, 2026.</sub>
+<sub>Contribution statuses checked November 13, 2026.</sub>

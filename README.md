@@ -76,12 +76,12 @@ Selected from 15 merged pull requests in 5 projects I use and study. The pattern
 <p><a href="https://github.com/promptfoo/promptfoo/pull/12005"><b>promptfoo/promptfoo #12005</b></a><br/><sub>feat(eval): add character facts template filter</sub></p>
 </td></tr>
 <tr><td colspan="2" valign="top"><h3>Reported issues</h3>
+<p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/241"><b>NVIDIA/SkillEvaluator #241</b></a><br/><sub>[BUG]: Tier 3 goal-accuracy judge can misgrade NBSP-sensitive answers</sub></p>
+<p><a href="https://github.com/addyosmani/agent-skills/issues/432"><b>addyosmani/agent-skills #432</b></a><br/><sub>Drift data for 3 of these skills across the sonnet-4-6 → sonnet-5 release</sub></p>
 <p><a href="https://github.com/BerriAI/litellm/issues/45830"><b>BerriAI/litellm #45830</b></a><br/><sub>[Bug]: Anthropic batch accounting undercounts 1h cache writes and omits web-search fees</sub></p>
-<p><a href="https://github.com/addyosmani/agent-skills/issues/693"><b>addyosmani/agent-skills #693</b></a><br/><sub>[skill-gap]: Quality-gate examples can pass CI with blocking Semgrep or axe findings</sub></p>
-<p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/221"><b>NVIDIA/SkillEvaluator #221</b></a><br/><sub>[BUG]: macOS cancellation cleanup test races with process exit</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-12 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-13 UTC.</sub>
 <!-- activity:end -->
 
 ---

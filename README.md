@@ -77,11 +77,11 @@ Selected from 15 merged pull requests in 5 projects I use and study. The pattern
 </td></tr>
 <tr><td colspan="2" valign="top"><h3>Reported issues</h3>
 <p><a href="https://github.com/anthropics/claude-code/issues/105497"><b>anthropics/claude-code #105497</b></a><br/><sub>[BUG] Native plugin eval LLM grader misgrades literal NBSP; equivalent escaped Python literals grade correctly</sub></p>
+<p><a href="https://github.com/PatrickJS/awesome-cursorrules/issues/472"><b>PatrickJS/awesome-cursorrules #472</b></a><br/><sub>[Rule]: Jest unit testing rule: &quot;Limit to 3-5 focused tests per file&quot; cuts bug detection</sub></p>
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/241"><b>NVIDIA/SkillEvaluator #241</b></a><br/><sub>[BUG]: Tier 3 goal-accuracy judge can misgrade NBSP-sensitive answers</sub></p>
-<p><a href="https://github.com/addyosmani/agent-skills/issues/432"><b>addyosmani/agent-skills #432</b></a><br/><sub>Drift data for 3 of these skills across the sonnet-4-6 → sonnet-5 release</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-25 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-26 UTC.</sub>
 <!-- activity:end -->
 
 ---

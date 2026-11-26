@@ -31,8 +31,8 @@ Driftproof runs the same tasks with a skill, without it, and with a same-length 
 </td>
 <td width="50%" valign="top">
 <h3>Read the findings</h3>
-<p>Latest report, on Fable 5.2: 10 of 20 skills beat a same-length placebo, 4 did not, and 6 could not be told apart.</p>
-<a href="https://driftproofhq.com/reports/019/"><b>Report 019 →</b></a> &nbsp;·&nbsp; <a href="https://driftproofhq.com/writing/three-releases/">Three model releases later</a>
+<p>Latest report, on Haiku 5.5 and Sonnet 5.5: We gave Claude a Jest rules file from the awesome-cursorrules list and asked it to write tests for 12 small projects with bugs planted in them. With the file, Sonnet's tests caught every planted bug in 2.5% of attempts against 65.8% with no file (share of attempts that caught every bug), and caught 9.5 points fewer of the planted bugs, 85.3% against 94.8% (share of planted bugs caught).</p>
+<a href="https://driftproofhq.com/reports/021/"><b>Report 021 →</b></a> &nbsp;·&nbsp; <a href="https://doi.org/10.5281/zenodo.24519141">Data on Zenodo</a> &nbsp;·&nbsp; <a href="https://driftproofhq.com/writing/three-releases/">Three model releases later</a>
 </td>
 </tr>
 </table>

@@ -81,7 +81,7 @@ Selected from 15 merged pull requests in 5 projects I use and study. The pattern
 <p><a href="https://github.com/NVIDIA/SkillEvaluator/issues/241"><b>NVIDIA/SkillEvaluator #241</b></a><br/><sub>[BUG]: Tier 3 goal-accuracy judge can misgrade NBSP-sensitive answers</sub></p>
 </td></tr>
 </table>
-<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-27 UTC.</sub>
+<sub>Public external PRs and issues · ordered by latest activity · refreshed 2026-11-28 UTC.</sub>
 <!-- activity:end -->
 
 ---
